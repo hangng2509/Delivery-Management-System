@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" 
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="header" 
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" 
+                       value="/WEB-INF/layout/content.jsp" />
+        <put-attribute name="footer" 
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="lichsugiaohangshipper" extends="baseLayout">
+        <put-attribute name="title" value="Lịch Sử Giao Hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/lichsugiaohangshipper.jsp"/>
+    </definition>
+    
+    <definition name="dsdonhang" extends="baseLayout">
+        <put-attribute name="title" value="Danh Sách Đơn Hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/dsdonhang.jsp"/>
+    </definition>
+    
+    <definition name="quanlygiaohang" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Giao Hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/quanlygiaohang.jsp"/>
+    </definition>
+    
+    <definition name="dsshipper" extends="baseLayout">
+        <put-attribute name="title" value="Danh Sách Tài Xế"/>
+        <put-attribute name="content" value="/WEB-INF/pages/dsshipper.jsp"/>
+    </definition>
+    
+    <definition name="chitietshipper" extends="baseLayout">
+        <put-attribute name="title" value="Chi Tiết Tài Xế"/>
+        <put-attribute name="content" value="/WEB-INF/pages/chitietshipper.jsp"/>
+    </definition>
+    
+    <definition name="chitietdonhang" extends="baseLayout">
+        <put-attribute name="title" value="Chi Tiết Đơn Hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/chitietdonhang.jsp"/>
+    </definition>
+    
+    <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Tình trạng đấu giá"/>
+        <put-attribute name="content" value="/WEB-INF/pages/cart.jsp"/>
+    </definition>
+    
+    <definition name="admin" template="/WEB-INF/admin/layout/base1.jsp">
+        <put-attribute name="title" value="Trang chủ Admin"/>
+        <put-attribute name="header" value="/WEB-INF/admin/layout/header1.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/admin/layout/content1.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/admin/layout/footer1.jsp"/>
+    </definition>
+    
+    <definition name="quanlydonhang" extends="admin">
+        <put-attribute name="title" value="Quản lý đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/quanlydonhang.jsp"/>
+    </definition>
+    
+    <definition name="orderStats" extends="admin">
+        <put-attribute name="title" value="Thống kê tần suất giao hàng"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/orderStats.jsp"/>
+    </definition>
+    
+    
+    <definition name="quanlychitiet" extends="admin">
+        <put-attribute name="title" value="Quản lý chi tiết đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/quanlychitiet.jsp"/>
+    </definition>
+    
+    <definition name="cusStats" extends="admin">
+        <put-attribute name="title" value="Thống kê doanh thu khách hàng"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/cusStats.jsp"/>
+    </definition>
+    
+    <definition name="shipStats" extends="admin">
+        <put-attribute name="title" value="Thống kê doanh thu tài xế"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/shipStats.jsp"/>
+    </definition>
+    <definition name="thongketaixe" extends="admin">
+        <put-attribute name="title" value="Thống kê doanh thu tất cả"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/thongketaixe.jsp"/>
+    </definition>
+    
+    <definition name="themdonhang" extends="admin">
+        <put-attribute name="title" value="Quản lý đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/themdonhang.jsp"/>
+    </definition>
+    
+    <definition name="quanlytaixe" extends="admin">
+        <put-attribute name="title" value="Quản lý tài xế"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/quanlytaixe.jsp"/>
+    </definition>
+    
+    <definition name="themtaixe" extends="admin">
+        <put-attribute name="title" value="Quản lý tài xế"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/themtaixe.jsp"/>
+    </definition>
+    
+    <definition name="quanlykhuyenmai" extends="admin">
+        <put-attribute name="title" value="Quản lý khuyến mãi"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/quanlykhuyenmai.jsp"/>
+    </definition>
+    
+    <definition name="themkhuyenmai" extends="admin">
+        <put-attribute name="title" value="Quản lý khuyến mãi"/>
+        <put-attribute name="content" value="/WEB-INF/admin/pages/themkhuyenmai.jsp"/>
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Login"/>
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp"/>
+    </definition>
+    
+    <definition name="dangky" template="/WEB-INF/pages/dangky.jsp"/>
+    
+    <definition name="edittaixe" template="/WEB-INF/admin/pages/edittaixe.jsp"/>
+    
+</tiles-definitions>
+
